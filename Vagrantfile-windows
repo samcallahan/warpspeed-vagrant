@@ -22,8 +22,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         mount_options: ["dmode=775,fmode=764"]
     end
 
-    config.vbguest.auto_update = false
-
     config.vm.provider "virtualbox" do |vb|
         vb.name = hostname
         vb.memory = 2048
